@@ -6,5 +6,18 @@ use Illuminate\Database\Eloquent\Model;
 
 class Movimento extends Model
 {
-    //
+    protected $table = "movimentos";
+
+    protected $fillable = [
+        'id_conta',
+        'tipo',
+        'descricao',
+        'valor',
+        'estado',
+    ];
+
+    public function conta()
+    {
+        return $this->belongsTo(Conta::class, 'id_conta', 'id');
+    }
 }

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Conta;
 use App\Pessoa;
 use App\Provincia;
-use App\User;
+use App\Usuario;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -139,7 +139,7 @@ class UserController extends Controller
         $person = Pessoa::create($data['person']);
         if ($person) {
             $data['user']['id_pessoa'] = $person->id;
-            $user = User::create($data['user']);
+            $user = Usuario::create($data['user']);
             if ($user) {
                 $data['count']['id_usuario'] = $user->id;
                 $data['count']['conta'] = $user->id . "00-000" . $person->id . "BANC";

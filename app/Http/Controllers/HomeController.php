@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Conta;
 use App\Movimento;
-use App\User;
+use App\Usuario;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -14,7 +14,7 @@ class HomeController extends Controller
     {
         $contas = Conta::where(['estado' => "on"])->get();
         $movimentos = Movimento::where(['estado' => "on"])->get();
-        $estudantes = User::where(['acesso' => "estudante"])->get();
+        $estudantes = Usuario::where(['acesso' => "estudante"])->get();
         $conta = null;
         if (Auth::check()) {
             if (Auth::user()->acesso == "estudante") {
