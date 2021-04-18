@@ -1,16 +1,29 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class ModoPagamentoSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+    static $modos = [
+        [
+            'modo'=>"Trimestral"
+        ],[
+            'modo'=>"Anual"
+        ],[
+            'modo'=>"Temporal"
+        ],[
+            'modo'=>"Mensal"
+        ],
+    ];
+
     public function run()
     {
-        //
+        foreach(Self::$modos as $modo){
+            DB::table('modo_pagamentos')->insert(
+                $modo
+            );
+        }
     }
 }
