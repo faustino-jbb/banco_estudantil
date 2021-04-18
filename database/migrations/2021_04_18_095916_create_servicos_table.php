@@ -14,8 +14,16 @@ class CreateServicosTable extends Migration
     public function up()
     {
         Schema::create('servicos', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->bigInteger('id_modo')->unsigned()->index();
+            $table->string('servico')->unique();
+            $table->decimal('valor', 12,2);
+            $table->string('estado');
             $table->timestamps();
+        });
+
+        Schema::table('servicos', function (Blueprint $table) {
+            $table->foreign('id_modo')->references('id')->on('modo_pagamentos')->onUpdate('cascade');
         });
     }
 

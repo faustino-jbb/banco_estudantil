@@ -14,8 +14,17 @@ class CreateMovimentosTable extends Migration
     public function up()
     {
         Schema::create('movimentos', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->bigInteger('id_conta')->unsigned()->index();
+            $table->string('tipo');
+            $table->text('descricao');
+            $table->decimal('valor', 12,2);
+            $table->string('estado');
             $table->timestamps();
+        });
+
+        Schema::table('movimentos', function (Blueprint $table) {
+            $table->foreign('id_conta')->references('id')->on('contas')->onUpdate('cascade');
         });
     }
 

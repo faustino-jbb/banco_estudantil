@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="080fc058-b5fa-4192-9efd-e8f390bed547" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Conta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Conta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Desconto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Desconto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ModoPagamento.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ModoPagamento.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Movimento.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Movimento.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Municipio.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Municipio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Pais.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Pais.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Pessoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Pessoa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Provincia.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Provincia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Servico.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Servico.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_18_095736_create_pais_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_18_095736_create_pais_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,13 +21,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="1" />
-          <entry key="php" value="44" />
+          <entry key="php" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="44" />
+          <entry key="PHP" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -57,18 +46,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ContaController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="236" column="55" selection-start-line="236" selection-start-column="55" selection-end-line="236" selection-end-column="55" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
           <provider selected="true" editor-type-id="text-editor" />
@@ -152,7 +129,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -164,7 +141,25 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2021_04_18_095736_create_pais_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>User</find>
+      <find>User::</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Usuario::</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -201,6 +196,7 @@
         <option value="$PROJECT_DIR$/app/Pessoa.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2021_04_18_095736_create_pais_table.php" />
       </list>
     </option>
   </component>
@@ -238,25 +234,13 @@
             <path>
               <item name="banco_estudantil" type="b2602c69:ProjectViewProjectNode" />
               <item name="banco_estudantil" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="banco_estudantil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="banco_estudantil" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="banco_estudantil" type="b2602c69:ProjectViewProjectNode" />
-              <item name="banco_estudantil" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="banco_estudantil" type="b2602c69:ProjectViewProjectNode" />
               <item name="banco_estudantil" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,24 +278,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618732852014</updated>
-      <workItem from="1618732871991" duration="3963000" />
+      <workItem from="1618732871991" duration="4095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3963000" />
+    <option name="totallyTimeSpent" value="4095000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="702" y="5" width="697" height="695" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19515885" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40502355" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.35765123" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -323,7 +307,7 @@
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.0030257185" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.007849294" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,6 +554,13 @@
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2021_04_18_095736_create_pais_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
     </entry>

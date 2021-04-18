@@ -14,8 +14,18 @@ class CreateContasTable extends Migration
     public function up()
     {
         Schema::create('contas', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->bigInteger('id_usuario')->unsigned()->index();
+            $table->string('conta')->unique();
+            $table->decimal('valor_existente', 12,2);
+            $table->text('ficheiro_bilhete')->nullable();
+            $table->text('password')->nullable();
+            $table->string('estado');
             $table->timestamps();
+        });
+
+        Schema::table('contas', function (Blueprint $table) {
+            $table->foreign('id_usuario')->references('id')->on('usuarios')->onUpdate('cascade');
         });
     }
 
