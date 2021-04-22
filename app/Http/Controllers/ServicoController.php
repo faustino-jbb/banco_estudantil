@@ -152,7 +152,7 @@ class ServicoController extends Controller
                     $data2['email']=$conta->usuario->email;
 
                     Mail::send('email.mail', $data2, function ($message) use ($data2) {
-                        $message->from('coutinho77Kombo@gmail.com', 'Banco BANC');
+                        $message->from('coutinho77Kombo@gmail.com', 'Banco IGE GRUPO 7');
                         $message->subject('Mudança do preço dos Serviços');
                         $message->to(
                             $data2['email']

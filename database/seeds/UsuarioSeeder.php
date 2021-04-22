@@ -23,7 +23,7 @@ class UsuarioSeeder extends Seeder
 
             [
                 'id_pessoa' => 2,
-                'username' => "banco",
+                'username' => "Banco IGE GRUPO 7",
                 'password' => Hash::make("baba20"),
                 'estado' => "on",
                 'acesso' => "admin",
